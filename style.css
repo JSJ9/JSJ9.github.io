@@ -4,10 +4,22 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
-    width: 100%;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    color:#3f46ff;
+    background-color: rgb(252, 252, 252) !important;
+    font-size: 20px !important;
 }
 
+.space-grotesk fontForText {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
 section {
     position: absolute;
     display: flex;
@@ -17,18 +29,72 @@ section {
     height: auto;
 }
 
+table th {
+    color:#3f46ff;
+    padding-left: 50px;
+}
+
+th {
+    margin-left: 100px;
+}
+
+li {
+    border: none !important;
+    text-align: justify !important;
+    background-color: red !important;
+    margin-left: 20px;
+}
+
 a {
     color: #3f46ff;
 }
 
-h3 {
+.container {
+    color: #3f46ff;
+}
+
+ul {
+    outline: none !important;
+    border-color: none !important;
+    border: none !important;
+}
+
+.list1 {
+    border: none;
+}
+
+.pfp {
+    clip-path: circle();
+    height: 300px;
+}
+
+.col-sm-8 {
+    /* background-color: gray; */
+    max-height:fit-content;
+    margin-bottom: 2vw;
+    border-width: 2px !important;
+    border-color: #3f46ff !important;
+    border: solid;
+    border-radius: 10px;
+    padding: 30px 30px 30px 30px;
+}
+
+.col-sm-12 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+
+
+/* h3 {
     font-weight: bolder;
     font-family: 'Montserrat', sans-serif;
     margin-bottom: 2%;
     font-size: 170%;
     color: white;
     text-align: center;
-}
+} */
 
 footer {
     height: 1vw;
@@ -48,29 +114,15 @@ table {
     position: absolute;
 }
 
-.mainHead {
-    overflow: hidden;
-    border-right: .15em solid #3f46ff;
-    white-space: nowrap;
-    color: #3f46ff;
-    font-family: 'Montserrat', sans-serif;
-    text-align: left;
-    margin-left: 65%;
-    margin-top: 10%;
-    width: 24%;
-    animation:
-        typing .99s steps(40, end),
-        blink-caret .75s step-end infinite;
-}
-
-@keyframes typing {
-    from{ width: 0 }
-    to { width: 20% }
-}
-
-@keyframes blink-caret {
-    from, to {border-color: transparent}
-    50% {border-color:#3f46ff}
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
 }
 
 .projectAbt {
@@ -104,4 +156,9 @@ table {
 
 .aboutText {
     padding-top: 2%;
+}
+
+ul .list{
+    background-color: black;
+    color: black;
 }
